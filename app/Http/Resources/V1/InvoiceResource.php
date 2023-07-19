@@ -16,7 +16,7 @@ class InvoiceResource extends JsonResource
     {
         return [
             'id' => $this->id,
-            'customer_id' => $this->customer_id,
+            'customer_name' => $this->customer->name,
             'amount' => $this->amount,
             'status' => $this->status,
             'billed_dated' => $this->billed_dated,
